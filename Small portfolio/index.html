@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Cards</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <article class="card">
+            <div class="background">
+                <picture>
+                    <source media="(min-width: 640px)" srcset="./images/profile-2 (2).jpg">
+                    <img src="./images/profile-2 (2).jpg" alt="THE_Haritz" data-testid="slackDisplayImage">
+                </picture>
+            </div>
+            <div class="content">
+                <h2>Welcome! I am <p data-testid="slackUserName">THE_Haritz</p></h2><h2> a very Junior Frontend Developer.</h2>
+                </h2>
+                <p>
+                    Currently a <a class="z-img" href="https://www.internship.zuri.team.com" title="Zuri" data-testid="myTrack">Front-end Track Intern</a> at Zuri-HNG
+                </p>
+                <p>Check me out on:</p>
+                <ul class="chips">
+                    <li>
+                        <a class="rice" href="https://www.github.com/haritz07" data-testid="githubURL">
+                            Github
+                        </a>
+                    </li>
+                    <li>
+                        <a class="rice" href="https://www.linkedin.com/in/oreoluwa-israel-a716a0226">
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li class="rice">
+                        Slack
+                    </li> 
+                </ul>
+                <div class="action-buttons">
+                    <a class="need" href="#need-me" data-testid="needMe">Poach Me 💀</a>
+                    <a href="#learn-more" class="secondary" title="Learn More"> 
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </article> 
+    </div>
+    <section>
+        <div id="clock" data-testid="currentUTCTime">
+            <div id="clock-2" data-testid="currentDayOfTheWeek"></div>
+        </div>
+    </section>
+    <audio id="backgroundMusic" src="./audio/Ramin-Djawadi-The-Winds-of-Winter.mp3" loop></audio>
+    <audio id ="selectSound" src="./audio/interface.mp3"> </audio>
+
+    <script src="./logic/script.js"></script>
+    <script src="./logic/clock.js"></script>
+</body>
+</html>
